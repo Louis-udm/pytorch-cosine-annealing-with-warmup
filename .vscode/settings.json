@@ -1,0 +1,23 @@
+{
+    // "python.defaultInterpreterPath": "/Users/zlu/anaconda3/envs/llm310/bin/python",
+    "python.defaultInterpreterPath": "/Users/zlu/.pyenv/versions/py310/bin/python",
+    "python.analysis.extraPaths": [
+        ".",
+    ],
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "${workspaceFolder}/tests",
+        "--rootdir",
+        "${workspaceFolder}",
+        // "--no-cov",
+        "-s",
+    ],
+    "files.exclude": {
+        "**/*.pyc": {"when": "$(basename).py"}, 
+        "**/__pycache__": true,
+        "*.egg-info":true,
+    }
+}
